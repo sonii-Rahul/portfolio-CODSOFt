@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Soni</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100&family=Source+Code+Pro:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: rgb(4, 4, 22);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Source Code Pro', monospace;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: #0e0225;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            transition: top 0.3s;
+        }
+
+        nav.hideNav {
+            top: -80px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 24px;
+         
+        }
+
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(165, 165, 238);
+            font-size: 1.2rem;
+        }
+        nav a{
+        
+            text-decoration: none;
+            color: white;
+
+        }
+        nav a:hover{
+            color: rgb(165, 165, 238);
+            font-size: 1.2rem;
+
+        }
+
+        .left {
+            font-size: 1rem;
+            
+            
+        }
+
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 25px 60px;
+            align-items: center;
+        }
+
+        .firstSection div> {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 23vh;
+        }
+
+
+        .leftsection {
+            font-size: 3rem;
+            margin: 40px 45px;
+        }
+
+        .rightsection img {
+            width: 70%;
+            height: 80%;
+            text-align: center;
+        }
+
+        .purple {
+            color: rgb(0, 135, 18);
+        }
+
+        #element {
+            color: rgb(86, 14, 128);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            font-size: 1.2rem;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 70vw;
+            height: 2px;
+            margin: 56px;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 50px;
+            width: 1px;
+            background: white;
+            margin: 0 100px;
+        }
+
+        .text-grey {
+            color: grey;
+            font-size: small;
+        }
+
+        .img-top {
+            width: 23px;
+            position: relative;
+            top: -24px;
+            left: -10px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 22px;
+            width: 150px;
+        }
+
+        .veritcal-desc {
+            position: relative;
+            top: 40px;
+            color: grey;
+            width: 150px;
+            font-size: 10px;
+        }
+
+        .Thirdsection {
+            max-width: 80vw;
+            margin: auto;
+            font-size: 1.2rem;
+            font-size: 1.2rem;
+            margin-top: 400px;
+
+
+
+        }
+        .Thirdsection .box{
+            background: white;
+            width: 70vw;
+            height: 2px;
+            margin: 56px;
+            display: flex;
+        }
+        .Thirdsection .vertical {
+            height: 50px;
+            width: 1px;
+            background: white;
+            margin: 0 100px;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(73, 10, 167);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        footer {
+            margin-top: 300px;
+            background-color: #0e0225;
+            height: 200px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-first {
+            color: white;
+            height: 150px;
+            text-align: center;
+        }
+
+        .footer-second {
+            color: white;
+            text-align: center;
+        }
+
+        .footer-third {
+            color: white;
+            text-align: center;
+        }
+
+        .footer-fourth {
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><a href="#home">Rahul Portfolio</a></div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection" id="home">
+            <div class="leftsection">Hi My Name Is <span class="purple">Rahul</span>
+                <div> and I Am A Developer</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="./bg.png">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection" id="about">
+            <span class="text-grey">What i have done so far</span>
+            <h1>Work exprience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="img-top" src="./rajuni.png" alt="">
+                    <div class="vertical-title">B.COM(2019-2021)</div>
+                    <div class="veritcal-desc">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Corrupti odio tenetur error assumenda vero voluptate, ex mollitia animi cupiditate
+                        quaerat,
+                        veniam non praesentium magnam a ullam architecto facere provident! Qui.</div>
+                </div>
+                <div class="vertical">
+                    <img class="img-top" src="./react.png" alt="">
+                    <div class="vertical-title">React js </div>
+                    <div class="veritcal-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odio
+                        tenetur
+                        error assumenda vero voluptate, ex mollitia animi cupiditate quaerat, veniam non praesentium
+                        magnam
+                        a ullam architecto facere provident! Qui.</div>
+                </div>
+                <div class="vertical">
+                    <img class="img-top" src="./sec.jpeg" alt="">
+                    <div class="vertical-title">Security training in Cyber-ops jaipur</div>
+                    <div class="veritcal-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odio
+                        tenetur
+                        error assumenda vero voluptate, ex mollitia animi cupiditate quaerat, veniam non praesentium
+                        magnam
+                        a ullam architecto facere provident! Qui.</div>
+                </div>
+                <div class="vertical">
+                    <img class="img-top" src="./dsi.jpeg" alt="">
+                    <div class="vertical-title">MCA(2022-Current)</div>
+                    <div class="veritcal-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odio
+                        tenetur
+                        error assumenda vero voluptate, ex mollitia animi cupiditate quaerat, veniam non praesentium
+                        magnam
+                        a ullam architecto facere provident! Qui.</div>
+                </div>
+            </div>
+        </section>
+        <section class="Thirdsection" id="projects">
+            <h1>Projects</h1>
+            <div class="box">
+
+                <div class="vertical">
+                    <div class="vertical-title">Security training in Cyber-ops jaipur</div>
+                    <div class="veritcal-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odio
+                        tenetur
+                        error assumenda vero voluptate, ex mollitia animi cupiditate quaerat, veniam non praesentium
+                        magnam
+                        a ullam architecto facere provident! Qui.</div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">Security training in Cyber-ops jaipur</div>
+                    <div class="veritcal-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odio
+                        tenetur
+                        error assumenda vero voluptate, ex mollitia animi cupiditate quaerat, veniam non praesentium
+                        magnam
+                        a ullam architecto facere provident! Qui.</div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">Security training in Cyber-ops jaipur</div>
+                    <div class="veritcal-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odio
+                        tenetur
+                        error assumenda vero voluptate, ex mollitia animi cupiditate quaerat, veniam non praesentium
+                        magnam
+                        a ullam architecto facere provident! Qui.</div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">Security training in Cyber-ops jaipur</div>
+                    <div class="veritcal-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odio
+                        tenetur
+                        error assumenda vero voluptate, ex mollitia animi cupiditate quaerat, veniam non praesentium
+                        magnam
+                        a ullam architecto facere provident! Qui.</div>
+                </div>
+            </div>
+
+
+            </div>
+        </section>
+    </main>
+    <footer id="contact">
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Rahuls Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                About me
+            </div>
+            <div class="footer-third">Third section</div>
+            <div class="footer-fourth">Fourth section</div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web Developer', 'Student of IT '],
+            typeSpeed: 50,
+        });
+        let prevScrollPos = window.pageYOffset;
+        window.onscroll = function () {
+            let currentScrollPos = window.pageYOffset;
+            if (prevScrollPos > currentScrollPos) {
+                document.querySelector("nav").style.top = "0";
+            } else {
+                document.querySelector("nav").style.top = "-80px";
+            }
+            prevScrollPos = currentScrollPos;
+        }
+    </script>
+</body>
+
+</html>
